@@ -12,6 +12,7 @@ APPLETS = mv6tool
 PREFIX ?= /usr/local/
 CFLAGS ?= -Wall -Wextra -Werror
 LDLIBS  = 
+LDFLAGS=-static
 
 objs = $(patsubst %.c, %.o, $(wildcard *.c))
 hdrs = $(wildcard *.h)
